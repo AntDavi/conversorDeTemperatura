@@ -49,26 +49,32 @@ body {
 
 .converter-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  
 }
 
 body .container input {
+  padding: .5rem 1rem;
+  
   background-color: rgba(255, 255, 255, 0.5);
   border-style: none;
   border-radius: .2em;
-  padding: 5px 0 5px 0;
+  
   text-align: center;
 }
 
 body .container .converter {
+  width: min-content;
+  margin: 0 0 0 2rem;
+  padding: .5rem 1rem;
+
   font-weight: 500;
   font-size: 20px;
-  margin: 15px auto 0 auto;
   background-color: #4C1A57;
-  width: min-content;
+  color: #fff;
+  
   border-radius: 5px;
   cursor: pointer;
-  padding: 0.2px 10px;
-  color: #fff;
 }

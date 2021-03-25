@@ -1,6 +1,12 @@
-function converter() {
-  alert("converteu")
+function converter () {
+  var temperaturaEmCelsius = parseFloat(document.getElementById('temperatura').value);
+
+
+  var temperaturaEmKelvin = temperaturaEmCelsius + 273.15
+
+  document.getElementById('temperaturaEmKelvin').innerHTML = temperaturaEmKelvin + "K";
 }
+
 
 //var temperaturaEmCelsius = parseFloat(prompt("Qual a temperatura em Celsius(°C)"))
 

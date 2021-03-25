@@ -29,10 +29,12 @@
         <p class="page-subtitle">Qual a temperatura em Celsius(°C)</p>
          
         <div class="converter-container">          
-          <input type="text" id="valor" min="0.00" placeholder="Insira um dvalor..."/>
+          <input type="number" id="temperatura" min="0.00" placeholder="Insira um valor..."/>
           
-          <p class= "converter" onclick="converter()">Converter!</p>
+          <input class= "converter" type="submit" onclick="converter()" value="Converter"/>
         </div>
+
+        <p id="temperaturaEmKelvin"></p>
 
         <p class="img-subtitle">Kelvin é a unidade de médida mais utilizada em laboratório para determinar a temperatura absoluta de um objeto.</p>
 

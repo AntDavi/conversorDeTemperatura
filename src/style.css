@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Mono',monospace;
-  min-height: 400px;
+  min-height: 620px;
   background: linear-gradient(180deg, #49416D 35.94%, #A882DD 100%);
   background-size: 100vh;
   background-position: center bottom;
@@ -74,21 +74,23 @@ body .container .converter {
 }
 
 body .container .conteudo #temperaturaEmKelvin {
+  display: none;
+}
+
+body .container .conteudo #temperaturaEmKelvin.active {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: auto;
-  margin-top: 5px;
+  margin: 1rem auto;
 
   background-color: #FFCC02;
-  padding: 5px 5px;
+  padding: .5rem 0;
 
   font-size: 25px;
   font-weight: 600;
   color: #4C1A57;
 
   border-radius: 5px;
-  
-  width: min-content;
+  width: 150px;
 }

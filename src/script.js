@@ -1,10 +1,21 @@
 function converter () {
+  open()
+
   var temperaturaEmCelsius = parseFloat(document.getElementById('temperatura').value);
 
+  console.log(temperaturaEmCelsius)
 
   var temperaturaEmKelvin = temperaturaEmCelsius + 273.15
 
-  document.getElementById('temperaturaEmKelvin').innerHTML = temperaturaEmKelvin + "K";
+  console.log(temperaturaEmKelvin)
+
+  document.getElementById('temperaturaEmKelvin').innerHTML = temperaturaEmKelvin.toFixed(2) + " K";
+}
+
+function open () {
+  document
+    .querySelector('#temperaturaEmKelvin')
+    .classList.add('active')
 }
 
 
